@@ -1,5 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
-import { GetServerSideProps } from 'next'
+import { GetServerSideProps, GetServerSidePropsContext } from 'next'
 import { useRouter } from 'next/router'
 import Head from 'next/head'
 import Link from 'next/link'
@@ -338,8 +338,13 @@ const Blog = ({ posts } : BlogProps) =>  {
 }
 export default Blog;
 
-export const getServerSideProps : GetServerSideProps = async () => {
-    let getPosts = await fetch('http://localhost:3000/api/data');
+export const getServerSideProps : GetServerSideProps = async (context : GetServerSidePropsContext) => {
+    try{
+        var getPosts = await fetch(`https://${context.req.headers.host}/api/data`);
+    }catch(e){
+        getPosts = await fetch(`http://${context.req.headers.host}/api/data`);
+    }
+    
     let res = await getPosts.json();
     let posts : Posts[] = res.posts;
     return {
