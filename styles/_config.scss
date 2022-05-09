@@ -1,0 +1,13 @@
+
+$activeColor : #323232;
+$mainColor : #e4e4e4;
+$secondaryColor:#787777;
+$grColor1: #553717;
+$grColor2: #755838;
+$brownGradient :linear-gradient(to bottom , rgba($grColor1 , 0.9) , rgba($grColor2 , 0.3));
+$darkenColor :rgba($activeColor,0.5);
+@mixin dflex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}

@@ -1,0 +1,72 @@
+@import "config";
+
+.footer 
+{
+    background-color: #141414;
+    color: white;
+    padding: 4% 10%;
+    .columns 
+    {
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 1.5rem;
+        .columnOne 
+        {
+            display: flex;
+            flex-flow: column;
+            justify-content: space-evenly;
+        }
+        .columnThree 
+        {
+            clip-path: polygon(4% 0%,100% 0%,100% 100%,4% 100%, 4% 10%,0% 10%);
+            background-color: $activeColor;
+            border-radius: 6px;
+            min-width: 15rem;
+            width: 33%;
+            .ccontainer 
+            {
+                height: 100%;
+                margin-left: 2%;
+                padding: 4% 6%;
+                display: flex;
+                flex-flow: column;
+                justify-content: space-evenly;
+                gap: 1rem;
+                input , button
+                {
+                    padding: 2%;
+                    border-radius: 3px;
+                    outline: none;
+                    border: none;
+                    background-color: #e7e7e7;
+                    color: black;
+                }
+                button 
+                {
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+    p 
+    {
+        padding-top: 2%;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:425px) {
+    .footer 
+    {
+        .columns 
+        {
+            .columnOne , .columnThree
+            {
+                width: 100%;
+            } 
+        }
+    }
+}

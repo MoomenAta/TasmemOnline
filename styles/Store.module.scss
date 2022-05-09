@@ -1,0 +1,100 @@
+.container 
+{
+    width: 100%;
+    min-height: 88vh;
+    color: white;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    .priceRange
+    {
+        
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        padding: 1.5rem;
+        border-bottom: 0.1rem solid white;
+        label 
+        {
+            direction: var(--lang);
+            margin: 0 0 1rem 0;
+        }
+        .inputRange 
+        {
+            position: relative;
+            background-color: rgb(180, 200, 255);
+            width: 100%;
+            height: 1rem;
+            border-radius: 15px;
+            input[type="range"]
+            {
+                -webkit-appearance: none;
+                width: 100%;
+                border: none;
+                border-radius: 3px;
+                pointer-events: none;
+                position: absolute;
+                z-index: 1;
+                left: 0;
+                top: 0;
+                background-color: unset;
+            }
+            input[type="range"]::-webkit-slider-thumb
+            {
+                cursor: pointer;
+                -webkit-appearance: none;
+                appearance: none;
+                pointer-events: all;
+                width: 1rem;
+                height: 1rem;
+                z-index: 5;
+                border-radius: 0;
+                border: 0 none;
+                border-radius: 50%;
+                background-color: rgb(255, 255, 255);
+            }
+            input[type="range"]::-moz-range-thumb
+            {
+                cursor: pointer;
+                -moz-appearance: none;
+                appearance: none;
+                pointer-events: all;
+                width: 1rem;
+                height: 1rem;
+                z-index: 5;
+                border-radius: 0;
+                border: 0 none;
+                border-radius: 50%;
+                background-color: rgb(255, 255, 255);
+            }
+            .range 
+            {
+                height: 1rem;
+                border-radius: 15px;
+                position: absolute;
+                z-index: 0;
+                background-color: rgb(0, 37, 248);
+                top: 0;
+                left: 0%;
+                right: 0%;
+            }
+        }
+        .priceValue
+        {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+    .products 
+    {
+        --bgColor:rgb(32, 32, 32);
+        padding: 1.5rem;
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        flex-wrap: wrap;
+        
+    }
+    
+}

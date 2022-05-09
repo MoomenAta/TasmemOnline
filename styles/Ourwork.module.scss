@@ -1,0 +1,45 @@
+@import "config";
+
+.containerAll 
+{
+    width: 100%;
+    .sectionOne 
+    {
+        width: 90%;
+        text-align: center;
+        padding: 2rem;
+        background-color: $activeColor;
+        color: white;
+        margin: 1rem auto;
+        border-radius: 0.5rem;
+        text-align: center;
+        a{
+            span{
+                svg{
+                    height: 4rem;
+                    width: 4rem;
+                }
+                g{
+                    fill: white;
+                }
+            }
+            h1{
+                font-size: 1.4rem;
+            }
+        }
+    }
+    .canvasContainer
+    {
+        width: 100%;
+        margin: 2rem auto;
+        overflow: hidden;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        &:hover
+        {
+            cursor: pointer;
+        }
+    }
+    
+}

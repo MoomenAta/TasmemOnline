@@ -1,0 +1,175 @@
+@import 'config';
+
+.cart 
+{
+    content: '';
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 40%;
+    height: 100%;
+    z-index: 3;
+    overflow-y: scroll;
+    border-radius: 6px;
+    padding: 1rem;
+    background-color: $mainColor;
+    box-shadow: -2px 4px 12px rgba(37, 37, 37, 0.247);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    transition: right 500ms ease-in-out;
+
+    button[data-close] {
+        position: absolute;
+        left: 20px;
+        border: none;
+        color: white;
+        padding: 0.2rem 0.5rem;
+        border-radius: 6px;
+        cursor: pointer;
+        span{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            svg{
+                width: 1.7rem;
+                height: 1.7rem;
+                g{
+                    fill: red;
+                }
+            }
+        }
+    }
+    h1 {
+        font-size: 2rem;
+        border-bottom: 1px solid black;
+    }
+
+    .cartItem
+    {
+        width: 100%;
+        position: relative;
+        display: flex;
+        gap: 1rem;
+        background-color: rgb(211, 211, 211);
+        border-radius: 3px;
+        box-shadow: 0px 4px 12px rgba(37, 37, 37, 0.096);
+        button[data-remove] {
+            cursor: pointer;
+            position: absolute;
+            top: -1rem;
+            right: 0;
+            width: 2rem;
+            font-size: 1.2rem;
+            line-height: 1;
+            border: none;
+            color: white;
+            height: 2rem;
+            border-radius: 50%;
+            span{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                svg{
+                    width: 1rem;
+                    height: 1rem;
+                    g{
+                        fill: red;
+                    }
+                }
+            }
+        }
+        img {
+            width: 40%;
+            object-fit: cover;
+            border-radius: 6px 0 0 6px;
+        }
+        .itemInfo {
+            width: 60%;
+            padding-top: 1.8rem;
+            h3 {
+                font-size: 1rem;
+            }
+            p {
+                font-size: 1.4rem;
+                font-weight: bold;
+            }
+            .count{
+                width: 50%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                span {
+                    font-size: 1.6rem;
+                }
+                button {
+                    width: 2rem;
+                    height: 2rem;
+                    cursor: pointer;
+                    padding: 0 0.6rem;
+                    border: none;
+                    border-radius: 6px;
+                    font-size: 0.9rem;
+                    span{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        svg{
+                            width: 1.2rem;
+                            height: 1.2rem;
+                        }
+                    }
+                }
+                button:nth-of-type(1){
+                    background-color: rgb(120, 182, 120);
+                    color: white;
+                    span{
+                        svg{
+                            g{
+                                fill: white;
+                            }
+                        }
+                    }
+                }
+                button:nth-of-type(2){
+                    border: 1px solid red;
+                    background-color: unset;
+                    span{
+                        svg{
+                            g{
+                                fill: red;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    a{
+        width: 100%;
+        position: sticky;
+        bottom: 0rem;
+        
+        button[data-checkout]{
+            
+            width: 100%;
+            padding: 0.5rem;
+            font-size: 1.2rem;
+            margin-top: 1rem;
+            font-weight: bold;
+            background-color: #5fb95f;
+            color: white;
+            border: 1px solid white;
+            cursor: pointer;
+        }
+    }
+    
+
+}
+
+@media screen and (max-width:768px) {
+    .cart{
+        width:80%
+    }
+}

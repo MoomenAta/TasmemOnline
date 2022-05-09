@@ -1,0 +1,212 @@
+{
+    "products" : [
+        {
+            "id": 1 ,
+            "name" : "Villa Facade Concept Design فكرة تصميمية لواجهة فيلا",
+            "price" : "3000.00",
+            "img": "/products/products1.webp",
+            "bestseller": false,
+            "discount": null
+        },
+        {
+            "id": 2 ,
+            "name" : "Room interior design تصميم داخلي لغرفة",
+            "price" : "3500.00",
+            "img": "/products/products2.webp",
+            "bestseller": false,
+            "discount": null
+        },
+        {
+            "id": 3 ,
+            "name" : "Villa concept design  فكرة تصميمية لفيلا",
+            "price" : "1500000",
+            "img": "/products/products3.webp",
+            "bestseller": true,
+            "discount": 10
+        },
+        {
+            "id": 4 ,
+            "name" : "Villa interior design تصميم داخلي لفيلا",
+            "price" : "31500.00",
+            "img": "/products/products4.webp",
+            "bestseller": false,
+            "discount": null
+        },
+        {
+            "id": 5 ,
+            "name" : "Strip Mall محلات تجارية",
+            "price" : "21000.00",
+            "img": "/products/products5.webp",
+            "bestseller": false,
+            "discount": null
+        },
+        {
+            "id": 6 ,
+            "name" : "Residential Design تصميم سكنى",
+            "price" : "17500.00",
+            "img": "/products/products6.webp",
+            "bestseller": true,
+            "discount": null
+        },
+        {
+            "id": 7 ,
+            "name" :  "Modern Luxury Home تصميم حديث لبيت فخم",
+            "price" : "45500.00",
+            "img": "/products/products7.webp",
+            "bestseller": false,
+            "discount": 5
+        },
+        {
+            "id": 8 ,
+            "name" :  "Chalet Design  تصميم شاليه",
+            "price" : "17500.00",
+            "img": "/products/products8.webp",
+            "bestseller": false,
+            "discount": 10
+        },
+        {
+            "id": 9 ,
+            "name" :  "Interior Design per meter square تصميم دخلي بالمتر المربع",
+            "price" : "100",
+            "img": "/products/products9.webp",
+            "bestseller": false,
+            "discount": null
+        },
+        {
+            "id": 10 ,
+            "name" :  "Luxury Classic Villa Design تصميم فيلا كلاسيك فخمة",
+            "price" : "125000.00",
+            "img": "/products/products10.webp",
+            "bestseller": false,
+            "discount": null
+        },
+        {
+            "id": 11 ,
+            "name" :  "Project Management& Construction Supervision إدارة مشروع والإشراف على التنفيذ",
+            "price" : "6000.00",
+            "img": "/products/products11.webp",
+            "bestseller": false,
+            "discount": null
+        },
+        {
+            "id": 12 ,
+            "name" :  "Landscape Concept فكرة تصميم لاندسكيب",
+            "price" : "7500.00",
+            "img": "/products/products12.webp",
+            "bestseller": false,
+            "discount": null
+        },
+        {
+            "id": 13 ,
+            "name" :  "Fitness Center Design تصميم نادى رياضى",
+            "price" : "20000.00",
+            "img": "/products/products13.webp",
+            "bestseller": false,
+            "discount": null
+        },
+        {
+            "id": 14 ,
+            "name" :  "Mixed Use Building design تصميم مبنى متنوع  ",
+            "price" : "50000.00",
+            "img": "/products/products14.webp",
+            "bestseller": false,
+            "discount": 5
+        },
+        {
+            "id": 15 ,
+            "name" :  "Restaurant Design تصميم مطعم",
+            "price" : "30000.00",
+            "img": "/products/products15.webp",
+            "bestseller": false,
+            "discount": null
+        },
+        {
+            "id": 16 ,
+            "name" :  "Neoclassical Home Design تصميم بيت نيوكلاسيك",
+            "price" : "90000.00",
+            "img": "/products/products16.webp",
+            "bestseller": false,
+            "discount": null
+        },
+        {
+            "id": 17 ,
+            "name" :  "Villa Design تصميم فيلا",
+            "price" : "24500.00",
+            "img": "/products/products17.webp",
+            "bestseller": false,
+            "discount": null
+        },
+        {
+            "id": 18 ,
+            "name" :  "Mixed use Building Facade تصميم واجهة مبنى متعدد الاستخدام",
+            "price" : "7500.00",
+            "img": "/products/products18.webp",
+            "bestseller": false,
+            "discount": 20
+        },
+        {
+            "id": 19 ,
+            "name" :  "Modern Design for Luxury Home تصميم حديث لبيت فخم",
+            "price" : "75500.00",
+            "img": "/products/products19.webp",
+            "bestseller": false,
+            "discount": null
+        },
+        {
+            "id": 20 ,
+            "name" :  "Dream Line Luxury Designs الفخامة تصميمات الأحلام",
+            "price" : "250000.00",
+            "img": "/products/products20.webp",
+            "bestseller": true,
+            "discount": null
+        }
+    ],
+    "images":[
+        "/imgs/img1.webp","/imgs/img2.webp","/imgs/img3.webp","/imgs/img4.webp","/imgs/img5.webp"
+        ,"/imgs/img6.webp","/imgs/img7.webp","/imgs/img8.webp"
+    ],
+    "posts":[
+        {
+            "id":1,
+            "userImg":"/imgs/img1.webp",
+            "userName":"Tasamim Online",
+            "date" : "6 April 2022",
+            "postImg":"/imgs/img1.webp",
+            "postTitle":"تصميم فيلا حديثة على شارعين",
+            "postDescribtion":"تصميم فيلا على الطراز المودرن بالقصيم على شارعين الواجهة والدور الأرضي يشمل مداخل فخمة بإرتفاعات مزدوجة والمجلس وغرفة طعام ومعيشة...",
+            "comments":[
+                {
+                    "id":1,
+                    "comment":"comment one"
+                },
+                {
+                    "id":2,
+                    "comment":"comment two"
+                }
+            ],
+            "views":20,
+            "likes":3
+        },
+        {
+            "id":2,
+            "userImg":"/imgs/img2.webp",
+            "userName":"Tasamim Online",
+            "date" : "5 April 2022",
+            "postImg":"/imgs/img2.webp",
+            "postTitle":"عمارة سكنية خاصة بالدمام",
+            "postDescribtion":"عمارة سكنية خاصة بالدمام مكونة من ثلاثة شقق كل دور شقة متكاملة منفصلة .",
+            "comments":[
+                {
+                    "id":1,
+                    "comment":"comment one"
+                },
+                {
+                    "id":2,
+                    "comment":"comment two"
+                }
+            ],
+            "views":20,
+            "likes":3
+        }
+    ]
+}

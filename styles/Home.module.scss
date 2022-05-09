@@ -1,0 +1,233 @@
+@import "config";
+
+.main {
+    min-height: 100vh;
+    padding: 4rem 0;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.logo {
+    height: 1em;
+    margin-left: 0.5rem;
+}
+
+.scone 
+{
+    width: 100%;
+    height: 90vh;
+    position: relative;
+    .imageContainer
+    {
+        width: 100%;
+        height: 90vh;
+        overflow: hidden;
+        position: absolute;
+        transition: opacity 500ms ease-in;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        z-index: -1;
+        div[data-subimagecontainer]{
+            position: relative;
+            width: 100%;
+            height: 100%;
+            display: block;
+            opacity: 0;
+            transition: opacity 500ms ease-in;
+        }
+        
+        h1
+        {
+            width: 20vmin;
+            text-align: center;
+            padding: 3vmin;
+            border-radius: 3px;
+            background-color: rgba($color: white, $alpha: 0.2);
+            backdrop-filter: blur(2px);
+            box-shadow: 4px 1px 16px rgba(228, 228, 228, 0.3);
+        }
+        img 
+        {
+            position: absolute;
+            top: 0;
+            z-index: -1;
+            width: 100%;
+            height: 90vh;
+            object-fit: cover;
+            object-position: 100% 50%;
+        } 
+    }
+    .textAll 
+    {
+        position: absolute;
+        top: 50%;
+        right: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: 100%;
+        padding: 0.5rem;
+        text-align: center;
+        color: white;
+        background-color: rgba(0, 0, 0, 0.4);
+        h1 
+        {
+            span{
+                font-size: 3rem;
+            }
+            
+        }
+        .textAllP 
+        {
+            margin: 0 auto;
+            width: 80%;
+            p 
+            {
+                font-size: 1.1rem;
+                font-weight: 600;
+            }
+        }
+    }
+    .controlers 
+    {
+        display: flex;
+        width: 96%;
+        margin: 0 auto;
+        justify-content: space-between;
+        position: absolute;
+        top: 50%;
+        right: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        button
+        {
+            box-shadow: 0 0px 16px $activeColor;
+            width: 3rem;
+            height: 3rem;
+            background-color: rgb(245, 245, 255);
+            outline: none;
+            border-radius: 50%;
+            border: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            span{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                svg 
+                {
+                    width: 1rem;
+                    height: 1rem;
+                    g{
+                        fill: rgb(34, 34, 34);
+                    }
+                    &[data-prev]{
+                        transform: rotate(180deg);
+                    }
+                }
+            }
+                
+            
+        }
+    }
+    .controlersDots 
+    {
+        position: absolute;
+        width: 100%;
+        text-align: center;
+        bottom: 16px;
+    }
+}
+/*************************************************** SCTWO *****************************************************/
+.sctwo 
+{
+    width:100%;
+    padding: 7rem 2rem;
+    overflow:hidden;
+    scroll-behavior: smooth;
+    background-color: rgba(255, 255, 255, 0.671);
+    position: relative;
+    .contentContainer 
+    {
+        --bgColor : white;
+        width: 90%;
+        margin: 0 auto;
+        scroll-snap-type: x mandatory;
+        overflow: hidden;
+        scroll-behavior: smooth;
+        display: flex;
+        gap: 1rem;
+    }
+    
+    .sctwoControlers
+    {
+        display: flex;
+        justify-content: space-between;
+        width: 96%;
+        position: absolute;
+        bottom: 50%;
+        left: 50%;
+        right:50%;
+        transform: translate(-50%,50%);
+        button 
+        {
+            width: 2rem;
+            height: 2rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            border:none;
+            background-color: $activeColor;
+            color: white;
+            border-radius: 50%;
+            cursor: pointer;
+            span{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                svg 
+                {
+                    width: 1rem;
+                    height: 1rem;
+                    g{
+                        fill: white;
+                    }
+
+                    &[data-prev]{
+                        transform: rotate(180deg);
+                    }
+                }
+            }
+            
+        }
+    }
+}
+
+@media screen and (max-width:768px) {
+    .scone
+    {
+        .textAll
+        {
+            .textAllP 
+            {
+                width: 77%;
+            }
+        }
+    }
+    
+    .sctwo
+    {
+        .contentContainer 
+        {
+            overflow-x: scroll;
+        }
+    }
+}
